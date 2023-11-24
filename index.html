@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nitesh Kohli</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/fbcbd03c5a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 id="logo">N<span>itesh.</span></h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Web App Developer</p>
+          <h1>Hi, I am <span>Nitesh</span> <br />Kohli</h1>
+        </div>
+      </div>
+    </div>
+
+    <!----------about-------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Nitesh-img3.jpg" alt="About-img" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi there! 👋 I'm Nitesh. I'm a Web App developer with knowledge of
+              MySQL, Express.JS, React.JS, Django. I have interest in Web
+              Development, Open source contribution , competitive programming,
+              Artificial intelligence & Machine learning. I'm Coding enthusiast
+              who's tackled 600+ DSA problems across Leetcode, Geeksforgeeks,
+              codingNinja Codestudio. My interests range from web development to
+              AI, and i'm always eager to explore new technological horizons.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>REACT.JS</span><br />Building frontend</li>
+                <li><span>MySQL</span><br />Managing Database</li>
+                <li><span>Django</span><br />building backend</li>
+                <li><span>AWS</span><br />Hosting and storage</li>
+                <li><span>Kubernetes</span><br />Scalability</li>
+                <li><span>JWT</span><br />Authentication and Authorization</li>
+                <li><span>Stripe</span><br />Payment Integration</li>
+                <li><span>C++</span><br />Competetive Programming</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>July 2023 - Aug. 2023</span><br />Software Engineer
+                  Trainee @sampark softwares Pvt. Ltd.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2019 - 2023</span><br />B.Tech. (CSE) @ University
+                  Institute of Engineering & Technology, Maharshi Dayanand
+                  University, Rohtak, Haryana.
+                </li>
+                <li>
+                  <span>2017 - 2018</span><br />12th @ KCM Public High School
+                  Palwal, Haryana
+                </li>
+                <li>
+                  <span>2015 - 2016</span><br />10th @ Vidya Bharti Public
+                  School Palwal, Haryana
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------services------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Development</h2>
+            <p>
+              🚀 Elevate your online presence with cutting-edge web applications
+              that marry stunning design with seamless functionality. As a
+              dedicated frontend web app developer, I specialize in bringing
+              your digital vision to life, ensuring a user experience that
+              captivates and converts.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Backend Development</h2>
+            <p>
+              Harnessing the power of cutting-edge technologies, I specialize in
+              crafting the backbone of web applications. From server-side logic
+              to database management, I ensure your web app runs smoothly and
+              efficiently.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Welcome to the digital realm where creativity meets functionality
+              – I am Nitesh, a seasoned web app developer and mastermind behind
+              transformative web design experiences. Crafting captivating and
+              cutting-edge websites is not just my profession; it's my passion.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------portfolio------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="work-1" />
+            <div class="layer">
+              <h3>React Weather application</h3>
+              <p>
+                The app that help you to know weather of any location in the
+                world.
+              </p>
+              <a href="https://weather-report-by-nitestark.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="work-2" />
+            <div class="layer">
+              <h3>React todo List</h3>
+              <p>The app that helps you to write your tasks to do.</p>
+              <a href="https://todo-list-jsl5.onrender.com/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="work-3" />
+            <div class="layer">
+              <h3>Number Game</h3>
+              <p>
+                A simple guessing Number game in which user guess a random
+                number chosen by computer.
+              </p>
+              <a href="https://niteshkoli.github.io/guess-my-number/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">see More</a>
+      </div>
+    </div>
+
+    <!-- -----------contact--------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>niteshkohli015@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>7056118584</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="https://twitter.com/_niteshkoli_"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/_nitestark_/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/niteshkohli/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/NiteshKohli.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2" onclick="sent()">
+                Submit
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright <i class="fa-solid fa-copyright"></i> Nitesh Kohli. Made
+          with <i class="fa-solid fa-heart"></i> by Nitesh
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sideMenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sideMenu.style.right = "0";
+      }
+      function closemenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwcE7A25xBh-5bmLR_qj8oyqJRj9jl0TFN4FFKxqI6hMIk3U2jsY3DTIZA9FR8rzf4fSA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, {method: "POST", body: new FormData(form)})
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      function sent() {
+        document.getElementById("msg").innerHTML = "Message sent successfully";
+      }
+
+      // const element = document.getElementsByName("submit-to-google-sheet");
+      // element.reset();
+    </script>
+  </body>
+</html>
